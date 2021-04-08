@@ -110,28 +110,33 @@ var pedirEntrega = parseInt(prompt("Digite 1 se você deseja retirar no balcão 
 
 var pedirPizza = parseInt(prompt("Digite o tamanho da pizza que você deseja: \n 1- para pequena \n 2- para Media \n 3- para gigante \n 4- para familia"))
 
+var arraytest = [{}];
+
 if (
     prompt(
-      'Você pode escolher um sabor ou meio a meio? \n Digite 1 para um sabor ou 2 para dois sabores'
+      'Você pode escolher um sabor ou meio a meio?\n Digite 1 para um sabor ou 2 para dois sabores'
     ) == 2
   ) {
     var saborPizza = parseInt(
       prompt(
-        'Temos sabores deliciosos! \nInforme seu primeiro sabor: \nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
+        'Temos sabores deliciosos!\nInforme seu primeiro sabor:\nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
       )
     );
     var saborPizza2 = parseInt(
       prompt(
-        'Temos sabores deliciosos! \nInforme seu primeiro sabor: \nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
+        'Temos sabores deliciosos!\nInforme seu primeiro sabor:\nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
       )
+      arraytest.push(saborPizza1, saborPizza2);
     );
   } else {
     var saborPizza = parseInt(
       prompt(
-        'Temos sabores deliciosos! \nInforme seu primeiro sabor: \nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
+        'Temos sabores deliciosos!\nInforme seu primeiro sabor:\nCalabresa (digite 1)\n4Queijos (digite 2)\nFrango com Catupiry (digite 3)\nPortuguesa (digite 4)\nCamarão (digite 5)\nCarne Seca (digite 6)\nLombo Canadense (digite 7)\nX-Fritas (digite 8)'
       )
+      arraytest.push(saborPizza);
     );
   } 
+
 
 //var saborPizza = parseInt(prompt("Digite o sabor da Pizza que deseja: \n 1- Calabresa: Mussarela, Calabresa e cebola \n 2- Quatro queijos: Mussarela, Cheddar, Parmesão e Prato \n 3- Frango com Catupiry: Mussarela, Frango e Catupiry \n 4- Portuguesa: Mussarela, Pimentão, Cebola, Presunto, Ovo, Cebola\n 5- Camarão: Mussarela, Camarão, Salsinha e Cebolinha \n 6- Carne Seca: Mussarela, Carne seca e cream cheese \n 7- Lombo Canadense: Mussarela, Lombo Canadense, Tomate, Orégano, Cebola \n 8- X-Fritas: Mussarela, Contra-filé, Presunto, Bacon, Ovo, Tomate, Cebola, Batata Frita"))
 
@@ -144,7 +149,7 @@ var formaDePagamento = parseInt(prompt("Digite qual será a forma de pagamento: 
 var somatorio = pizzas[pedirPizza].valor + bordas[pedirBordas].valor + bebidas[pedirBebidas].valor + entrega[pedirEntrega].valor
 
 
-confirm(`Resumo do seu Pedido: \n Numero do Pedido: ${numeroPedido} \n Pizza: ${saboresPizza[saborPizza].sabor} e ${saboresPizza[saborPizza2].sabor} \n 
+confirm(`Resumo do seu Pedido: \n Numero do Pedido: ${numeroPedido} \n Pizza: ${arraytest} \n 
 Tamanho: ${pizzas[pedirPizza].descricao} \n Borda: ${bordas[pedirBordas].tipo} \n 
 Bebida: ${bebidas[pedirBebidas].modelo} \n Dados do pagamento: ${pagamento[formaDePagamento].descricao} \n 
 Entrega: ${entrega[pedirEntrega].tipo}\n Valor Total: R$${somatorio},00 \n Tempo Estimado: 90 min.`)
@@ -160,3 +165,4 @@ if (formaDePagamento == "4"){
 
 alert(`Agradecemos sua preferência senhor(a) ${cliente.nome}`)
 
+document.write(`Resumo do seu Pedido:\nNumero do Pedido: ${numeroPedido}\nPizza: ${saboresPizza[saborPizza].sabor} e ${saboresPizza[saborPizza2].sabor}\nTamanho: ${pizzas[pedirPizza].descricao}\nBorda: ${bordas[pedirBordas].tipo}\nBebida: ${bebidas[pedirBebidas].modelo}\nDados do pagamento: ${pagamento[formaDePagamento].descricao}\nEntrega: ${entrega[pedirEntrega].tipo}\n Valor Total: R$${somatorio},00\nTempo Estimado: 90 min.`)
