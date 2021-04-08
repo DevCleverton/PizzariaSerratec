@@ -1,3 +1,6 @@
-body {
-    background: url(https://www.bing.com/images/search?view=detailV2&ccid=ftH%2bauP%2b&id=9CAC21CC050B572649B872526F91CCB76524D37F&thid=OIP.ftH-auP-grYS19fiNNQMdgHaFS&mediaurl=https%3a%2f%2fcdn.e-konomista.pt%2fuploads%2f2020%2f03%2fpizza-bimby-.jpg&exph=1000&expw=1400&q=img+pizza&simid=607993994245386498&ck=127594FD63D1ECAE9A57DCA6C3033FB8&selectedIndex=104&FORM=IRPRST&ajaxhist=0);
-}
+//*body {
+    background: url(https://th.bing.com/th/id/OIP.ftH-auP-grYS19fiNNQMdgHaFS?pid=ImgDet&rs=1) 100% no-repeat; */
+    * {
+       background-image: url(https://br.freepik.com/vetores-gratis/papel-de-parede-mural-do-restaurante_10582192.htm#page=1&query=fundo%20pizza&position=14); 
+    }
+

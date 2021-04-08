@@ -1,26 +1,3 @@
-/*Bebidas
-(Coca Cola  - R$12,00)
-(Fanta - R$10,00)
-(Guaraná Antarctica  - R$10,00)
-(H2O  - R$8,00)
-(Del Valle  - R$7,00)
-*/
-
-//O tamanho da pizza
-//(Pequena 20cm  - R$25,00)
-//(Media 25cm  - R$30,00)
-//(Gigante 35cm  - R$40,00)
-//(Familia 40cm  - R$45,00)
-
-/*Tipo de borda
-(Gorgonzola  - R$10,00)
-(Provolone  - R$8,00)
-(Catupiry  - R$5,00)
-(Cheddar - R$5,00)
-(Sem borda  - R$0,00)*/
-
-
-
 // alert("Seja Bem-vindo(a) a nossa pizzaria")
 
 // var tamanhoDaPizza = prompt("Digite o numero da pizza que você deseja: \n 1 - Pequena 20cm - R$25,00 \n 2 - Media 25cm - R$30,00 \n 3 - Gigante 35cm - R$40,00 \n 4 - Familia 40cm - R$45,00")
