@@ -100,13 +100,13 @@ while (resposta == false) {
             referencia: "",
         };
         cliente.nome = prompt("Digite seu nome: ");
-        cliente.celular = prompt("Digite seu celular: ");
+        cliente.celular = prompt(`${cliente.nome}, digite seu celular: `);
 
-        cliente.rua = prompt("Digite sua rua: ");
-        cliente.numero = prompt("Digite o seu número: ");
-        cliente.complemento = prompt("Digite o complemento do seu endereço: ");
-        cliente.bairro = prompt("Digite seu bairro:");
-        cliente.referencia = prompt("Digite uma referência:");
+        cliente.rua = prompt(`${cliente.nome},digite sua rua: `);
+        cliente.numero = prompt(`${cliente.nome}, digite o seu número: `);
+        cliente.complemento = prompt(`${cliente.nome}, digite o complemento do seu endereço: `);
+        cliente.bairro = prompt(`${cliente.nome}, digite seu bairro: `);
+        cliente.referencia = prompt(`${cliente.nome}, digite uma referência: `);
 
 
         var numeroPedido = Math.floor(Math.random() * 100);
@@ -120,27 +120,27 @@ while (resposta == false) {
         if (dominos == 1) {
             var saborPizza = parseInt(
                 prompt(
-                    'Temos sabores deliciosos!\nInforme seu sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\n(digite 8) X-Fritas '
+                    `${cliente.nome}, temos sabores deliciosos!\nInforme seu sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\n(digite 8) X-Fritas `
                 )
             );
         } else {
             var saborPizza = parseInt(
                 prompt(
-                    'Temos sabores deliciosos!\nInforme seu primeiro sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\ndigite 8) X-Fritas'
+                    `${cliente.nome}, temos sabores deliciosos!\nInforme seu primeiro sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\ndigite 8) X-Fritas`
                 )
             );
             var saborPizza2 = parseInt(
                 prompt(
-                    'Temos sabores deliciosos!\nInforme seu segundo sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\n(digite 8) X-Fritas'));
+                    `${cliente.nome}, temos sabores deliciosos!\nInforme seu segundo sabor:\n(digite 1) Calabresa\n(digite 2) 4Queijos\n(digite 3) Frango com Catupiry\n(digite 4) Portuguesa\n(digite 5) Camarão\n(digite 6) Carne Seca\n(digite 7) Lombo Canadense\n(digite 8) X-Fritas`));
 
         }
 
 
         
 
-        var pedirBordas = parseInt(prompt("Digite o sabor da borda que deseja: \n 1- Gorgonzola - R$10,00\n 2 - Provolone - R$8.00 \n 3 - Catupiry - R$5.00\n 4 - Cheddar - R$5.00\n 5 - Sem Borda"))
+        var pedirBordas = parseInt(prompt(`${cliente.nome}, digite o sabor da borda que deseja: \n 1- Gorgonzola - R$10,00\n 2 - Provolone - R$8.00 \n 3 - Catupiry - R$5.00\n 4 - Cheddar - R$5.00\n 5 - Sem Borda`))
 
-        var pedirBebidas = parseInt(prompt("Digite qual bebida você deseja: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00"))
+        var pedirBebidas = parseInt(prompt(`Digite qual bebida você deseja: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00"))
 
         var formaDePagamento = parseInt(prompt("Digite qual será a forma de pagamento: \n 1 - Cartão de Crédito ou Débito \n 2 - Pix \n 3 - PicPay \n 4 - Dinheiro"))
 
@@ -168,4 +168,6 @@ while (resposta == false) {
 }
 alert(`Agradecemos sua preferência senhor(a) ${cliente.nome}`)
 
-document.write(`<h1 style="color: white";>Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida: ${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br>Forma de Entrega: ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Tempo Estimado de até 90 min.</h1>`)
+document.write(
+  `<center><div style="background-color: orange; width: 60%";><h1 style="color: black";>Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Tempo Estimado de até 90 min.</h1></div></center>`
+);
