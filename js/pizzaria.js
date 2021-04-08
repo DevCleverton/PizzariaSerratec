@@ -71,8 +71,8 @@ function calcTamanhoDaPizza(valorTotal, tamanho) {
 calcTamanhoDaPizza(valorTotal, tamanho);
 
 var borda = [
-    'xx',
-    
+    ,
+
 ]
 
 function calcBorda(tipoBorda){
