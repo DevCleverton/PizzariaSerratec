@@ -103,6 +103,7 @@ cliente.complemento = prompt("Digite o complemento do seu endereço: ");
 cliente.bairro = prompt("Digite seu bairro:");
 cliente.referencia = prompt("Digite uma referência:");
 
+
 var numeroPedido = Math.floor(Math.random() * 100);
 
 var pedirEntrega = parseInt(prompt("Digite 1 se você deseja retirar no balcão \nDigite 2 para receber em casa (Delivery)"))
@@ -113,15 +114,26 @@ var saborPizza = parseInt(prompt("Digite o sabor da Pizza que deseja: \n 1- Cala
 
 var pedirBordas = parseInt(prompt("Digite o sabor da borda que deseja: \n 1- Gorgonzola - R$10,00\n 2 - Provolone - R$8.00 \n 3 - Catupiry - R$5.00\n 4 - Cheddar - R$5.00\n 5 - Sem Borda"))
 
+
 var pedirBebidas = parseInt(prompt("Digite qual bebida você deseja: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00"))
 
 var formaDePagamento = parseInt(prompt("Digite qual será a forma de pagamento: \n 1 - Cartão de Crédito ou Débito \n 2 - Pix \n 3 - PicPay \n 4 - Dinheiro"))
 
-
 var somatorio = pizzas[pedirPizza].valor + bordas[pedirBordas].valor + bebidas[pedirBebidas].valor + entrega[pedirEntrega].valor
+
+
 confirm(`Resumo do seu Pedido: \n Numero do Pedido: ${numeroPedido} \n Pizza: ${saboresPizza[saborPizza].sabor} \n 
 Tamanho: ${pizzas[pedirPizza].descricao} \n Borda: ${bordas[pedirBordas].tipo} \n 
-Bebida: ${bebidas[pedirBebidas].modelo}\n Dados do pagamento: ${pagamento[formaDePagamento].descricao} \n 
+Bebida: ${bebidas[pedirBebidas].modelo} \n Dados do pagamento: ${pagamento[formaDePagamento].descricao} \n 
 Entrega: ${entrega[pedirEntrega].tipo}\n Valor Total: R$${somatorio},00 \n Tempo Estimado: 90 min.`)
+
+var precisaDeTroco = prompt("Precisa de Troco\n 1 - Sim\n 2 - Não")
+
+if (formaDePagamento == "4"){
+    if(precisaDeTroco== "1"){
+    var troco = parseFloat(prompt("Precisa de troco para quanto:"))
+    total = troco - somatorio}
+}
+
 
 alert(`Agradecemos sua preferência senhor(a) ${cliente.nome}`)
