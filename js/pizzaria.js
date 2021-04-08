@@ -36,13 +36,23 @@
 // var escreve = escreverTamanhoDaPizza(tamanhoDaPizza) 
 
 
-var tamanho  = [
-    'Pequena',
-    'Média',
-    'Gigante',
-    'Familia'
+var pizzas = [
+    {id:1, descricao:"Pequena", tamanho: 20, valor: 25.0},
+    {id:2, descricao:"Media", tamanho: 25, valor: 30.0},
+    {id:3, descricao:"Gigante", tamanho: 35, valor: 40.0},
+    {id:4, descricao:"Familia", tamanho: 45, valor: 45.0},
+
 ];
 var valorTotal = 0;
+
+var bordas = [
+    {id: 1, tipo: "Gorgonzola", valor: 10.00},
+    {id: 2, tipo: "Provolone", valor: 8.00},
+    {id: 3, tipo: "Catupiry", valor: 5.00},
+    {id: 4, tipo: "Cheddar", valor: 5.00},
+    {id: 5, tipo: "Sem Boda", valor: 0.00}
+]
+
 
 function calcTamanhoDaPizza(valorTotal, tamanho) {
 
@@ -110,9 +120,19 @@ Forma de Pagamento
 (Cartão - Debito ou Credito)
 Pix
 PicPay
-Dinheiro 
+Dinheiro
+
  */
+
 // var valorTotal = 78.9;
+var pagamento = [ 
+{id:1, descrição:"Cartão de crédito ou débito"},
+{id:2, descricao:"Pix"},
+{id:3, descrição:"PicPay"},
+{id:4, descrição:"Dinheiro"}
+]
+var formaDePagamento = parseInt("Digite qual será a forma de pagamen: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00")
+
 // formaDePagamento();
 // function formaDePagamento() {
 //     pagamento = parseInt(
@@ -156,20 +176,49 @@ Dinheiro
 // document.write(`O valor total até agora é ${valorTotal}`);
 
 
-
-
-// //Sabores Pizza
-// saboresPizza = [
-//     'xx',
-//     'Calabresa',
-//     'Quatro Queijos',
-//     'Frango com Cautpiry',
-//     'Portuguesa',
-//     'Camarão',
-//     'Carne Seca',
-//     'Lombo Canadense',
-//     'X-Fritas',
-//   ];
+const saboresPizza = [
+    {
+      id: 1,
+      sabor: 'calabresa',
+      descrição: 'Mussarela, Calabresa e cebola',
+    },
+    {
+      id: 2,
+      sabor: 'Quatro queijos',
+      descrição: 'Mussarela, Cheddar, Parmesão e Prato',
+    },
+    {
+      id: 3,
+      sabor: 'Frango com Catupiry',
+      descrição: 'Mussarela, Frango e Catupiry',
+    },
+    {
+      id: 4,
+      sabor: 'Portuguesa',
+      descrição: 'Mussarela, Pimentão, Cebola, Presunto, Ovo, Cebola',
+    },
+    {
+      id: 5,
+      sabor: 'Camarão',
+      descrição: 'Mussarela, Camarão, Salsinha e Cebolinha',
+    },
+    {
+      id: 6,
+      sabor: 'Carne Seca',
+      descrição: 'Mussarela, Carne seca e cream cheese',
+    },
+    {
+      id: 7,
+      sabor: 'Lombo Canadense',
+      descrição: 'Mussarela, Lombo Canadense, Tomate, Orégano, Cebola',
+    },
+    {
+      id: 8,
+      sabor: 'X-Fritas',
+      descrição:
+        'Mussarela, Contra-filé, Presunto, Bacon, Ovo, Tomate, Cebola, Batata Frita',
+    },
+  ];
   
 //   function selecionaSabor() {
 //     if (
@@ -206,4 +255,41 @@ Dinheiro
 //   }
   
 //   selecionaSabor();
+// var pessoa = {
+//     nome:"",
+//     celular:""
+// }
+
+// var pizzas = [
+//     {id:1, descricao:"Pequena", tamanho: 20, valor: 25.0},
+//     {id:2, descricao:"media", tamanho: , valor: 20.0},
+//     {id:3, descricao:"Famila", tamanho: 35, valor: 25.0}
+// ]
+
+
+// var tamanho =  prompt("Digite o tamanho da pizza.");
+
+// var pedido = {
+//     pessoa: pessoa,
+//     tamanhoPizza: pizzas.find(pizza => pizza.id == tamanho)
+
+// }
+
+// WEBERSON RODRIGUES DE ARAUJO OLIVEIRA14:17
+
+// var bebidas= [
+//     {id:1, descricao:"Coco Cola", tamanho: '2lt', valor: 12.0},
+//     {id:2, descricao:"Coco Cola", tamanho: '2lt', valor: 12.0},
+//     {id:3, descricao:"Coco Cola", tamanho: '2lt', valor: 12.0},
+// ]
+
+
+// var bordas = [
+//     {id:1, descricao:"Gorgonzola", tamanho: '2cm', valor: 8.0},
+// ]
+
+// var bordas = [
+//     {id:1, descricao:"Credito ou Debito", troco: 0},
+//     {id:1, descricao:"Dinheiro", troco: 100},
+// ]
   
