@@ -5,7 +5,8 @@ Pix
 PicPay
 Dinheiro 
  */
-
+var valorTotal = 78.9;
+formaDePagamento();
 function formaDePagamento() {
     pagamento = parseInt(
         prompt(
@@ -26,13 +27,23 @@ function formaDePagamento() {
             break;
         case 4:
             alert("Ok, a forma de pagamento escolhida foi Dinheiro");
-            let valorParaTroco = parseInt(
-                prompt("Digite o valor para troco: ")
+            let troco = parseInt(
+                prompt("O entregador deverá levar troco?\n 1 - Sim\n 2 - Não")
             );
-            valorParaLevar = valorParaTroco - valorTotal;
+            if (troco == 1) {
+                let valorParaTroco = parseInt(
+                    prompt("Digite o valor que você dará ao entregador: ")
+                );
+                valorParaLevar = valorParaTroco - valorTotal;
+            } else {
+                alert("Ok, o dinheiro está certinho");
+            }
             break;
 
         default:
+            alert("A opção digitada não corresponde com as alternativas");
+            formaDePagamento();
             break;
     }
 }
+document.write(`O valor total até agora é ${valorTotal}`);
