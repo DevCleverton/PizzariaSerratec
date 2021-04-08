@@ -1,5 +1,14 @@
-body{
-    background: url(https://image.freepik.com/vetores-gratis/papel-de-parede-mural-do-restaurante_23-2148707022.jpg) 100% no-repeat;
+h2 span{
+    position: absolute;
+    top: 290px;
+    left: 400px;
+    font-size: 60px;
+    color: #f0855f;
+    text-shadow:  0.1em 0.1em black;
+    -webkit-text-stroke: 1px red;
 }
-    
+
+body{
+    background: url("https://images7.alphacoders.com/858/thumb-1920-858236.jpg") no-repeat;
+} 
 
