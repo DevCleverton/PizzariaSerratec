@@ -142,7 +142,7 @@ while (resposta == false) {
 
         var pedirBebidas = parseInt(prompt(`${cliente.nome}, digite qual bebida você deseja: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00`))
 
-        var formaDePagamento = parseInt(prompt(`${cliente.nome}igite qual será a forma de pagamento: \n 1 - Cartão de Crédito ou Débito \n 2 - Pix \n 3 - PicPay \n 4 - Dinheiro"))
+        var formaDePagamento = parseInt(prompt(`${cliente.nome}, digite qual será a forma de pagamento: \n 1 - Cartão de Crédito ou Débito \n 2 - Pix \n 3 - PicPay \n 4 - Dinheiro`))
 
         var somatorio = pizzas[pedirPizza].valor + bordas[pedirBordas].valor + bebidas[pedirBebidas].valor + entrega[pedirEntrega].valor
 
@@ -169,5 +169,5 @@ while (resposta == false) {
 alert(`Agradecemos sua preferência senhor(a) ${cliente.nome}`)
 
 document.write(
-  `<center><div style="background-color: orange; width: 60%";><h1 style="color: black";>Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Tempo Estimado de até 90 min.</h1></div></center>`
+  `<center><div style="background-color: orange; width: 60%";><h1 style="color: black";> Olá, ${cliente.nome} <br> Numero do seu Pedido é: ${numeroPedido} <br> Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Tempo Estimado de até 90 min.</h1></div></center>`
 );
