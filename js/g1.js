@@ -53,3 +53,21 @@ const saboresPizza = [
   },
 ];
 
+const cliente = {
+    nome: "",
+    celular: "",
+    rua: "",
+    numero: "",
+    complemento: "",
+    bairro: "",
+    referencia: "",
+};
+
+
+var pagamento = [ 
+  {id:1, descrição:"Cartão de crédito ou débito"},
+  {id:2, descricao:"Pix"},
+  {id:3, descrição:"PicPay"},
+  {id:4, descrição:"Dinheiro"}
+  ]
+  var formaDePagamento = parseInt("Digite qual será a forma de pagamento: \n 1 - Cartão de Crédito ou Débito \n 2 - Pix \n 3 - PicPay \n 4 - Dinheiro")]

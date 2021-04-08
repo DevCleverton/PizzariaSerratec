@@ -35,7 +35,7 @@
 // var valorTotal = 
 // var escreve = escreverTamanhoDaPizza(tamanhoDaPizza) 
 
-
+var pedirPizza = parseInt("Digite o tamanho que deseja \n 1- para pequena \n 2- para Media \n 3- para gigante \n 4- para familia")
 var pizzas = [
     {id:1, descricao:"Pequena", tamanho: 20, valor: 25.0},
     {id:2, descricao:"Media", tamanho: 25, valor: 30.0},
@@ -125,13 +125,7 @@ Dinheiro
  */
 
 // var valorTotal = 78.9;
-var pagamento = [ 
-{id:1, descrição:"Cartão de crédito ou débito"},
-{id:2, descricao:"Pix"},
-{id:3, descrição:"PicPay"},
-{id:4, descrição:"Dinheiro"}
-]
-var formaDePagamento = parseInt("Digite qual será a forma de pagamen: \n 1 - Coca Cola - R$ 12.00 \n 2 - Fanta - R$ 10.00 \n 3 - Guaraná - R$ 10.00 \n 4 - H2O - R$ 8.00 \n 5 - Dell Valle - R$ 7.00")
+
 
 // formaDePagamento();
 // function formaDePagamento() {
