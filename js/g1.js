@@ -203,7 +203,7 @@ function iniciarSistema() {
 
   document.getElementById(
     'detalhes'
-  ).innerHTML = `<div style="background-color: orange; width: 50%";><p style="color: black; font-size: 36px; text-align: center;"> Olá, ${cliente.nome} <br> Numero do seu Pedido é: ${numeroPedido} <br> Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Seu Pedido foi CONFIRMADO <br> Tempo Estimado de até 90 min.</p></div>`;
+  ).innerHTML = `<div style="background-color: rgba(255, 166, 0, 0.603); width: 50%";><p style="color: black; font-size: 36px; text-align: center;"> Olá, ${cliente.nome} <br> Numero do seu Pedido é: ${numeroPedido} <br> Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Seu Pedido foi CONFIRMADO <br> Tempo Estimado de até 90 min <br> A Pizzaria G1 agradece pela Preferência!.</p></div>`;
 }
 setTimeout(() => {
   iniciarSistema();
