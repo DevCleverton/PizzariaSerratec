@@ -1,5 +1,6 @@
 body{
-    background-image: url("../img/thumb-1920-858236.jpg") no-repeat;
+    background: url("https://images7.alphacoders.com/858/thumb-1920-858236.jpg") no-repeat;
+    background-attachment: fixed
 }
 
 h2 span{
