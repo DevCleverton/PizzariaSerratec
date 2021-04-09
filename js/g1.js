@@ -103,7 +103,7 @@ while (resposta == false) {
         cliente.celular = prompt(`${cliente.nome}, digite seu celular: `);
 
         cliente.rua = prompt(`${cliente.nome},digite sua rua: `);
-        cliente.numero = prompt(`${cliente.nome}, digite o seu número: `);
+        cliente.numero = prompt(`${cliente.nome}, digite o número do endereço: `);
         cliente.complemento = prompt(`${cliente.nome}, digite o complemento do seu endereço: `);
         cliente.bairro = prompt(`${cliente.nome}, digite seu bairro: `);
         cliente.referencia = prompt(`${cliente.nome}, digite uma referência: `);
@@ -149,7 +149,7 @@ while (resposta == false) {
         if (dominos == 1) {
             var resposta = confirm(`Resumo do seu Pedido:\nNumero do Pedido: ${numeroPedido}\nPizza: ${saboresPizza[saborPizza].sabor}\nTamanho: ${pizzas[pedirPizza].descricao}\nBorda: ${bordas[pedirBordas].tipo}\nBebida: ${bebidas[pedirBebidas].modelo}\nDados do pagamento: ${pagamento[formaDePagamento].descricao}\nEntrega: ${entrega[pedirEntrega].tipo}\n Valor Total: R$${somatorio},00 \n Tempo Estimado de até 90 min.`)
         } else {
-            var resposta = confirm(`Resumo do seu Pedido:\nNumero do Pedido: ${numeroPedido}\nPizza: ${saboresPizza[saborPizza].sabor} e ${saboresPizza[saborPizza2].sabor}\nTamanho: ${pizzas[pedirPizza].descricao}\nBorda: ${bordas[pedirBordas].tipo}\nBebida: ${bebidas[pedirBebidas].modelo}\nDados do pagamento: ${pagamento[formaDePagamento].descricao}\nEntrega: ${entrega[pedirEntrega].tipo}\nValor Total: R$${somatorio},00\nTempo Estimado de até 90 min.`)
+            var resposta = confirm(`Resumo do seu Pedido:\nNumero do Pedido: ${numeroPedido}\nPizza: ${saboresPizza[saborPizza].sabor} e ${saboresPizza[saborPizza2].sabor}\nTamanho: ${pizzas[pedirPizza].descricao}\nBorda: ${bordas[pedirBordas].tipo}\nBebida: ${bebidas[pedirBebidas].modelo}\nDados do pagamento: ${pagamento[formaDePagamento].descricao}\nEntrega: ${entrega[pedirEntrega].tipo}\nValor Total: R$${somatorio},00\nSeu Pedido foi CONFIRMADO\nTempo Estimado de até 90 min.`)
 
         }
     }
