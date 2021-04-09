@@ -30,7 +30,7 @@ function iniciarSistema() {
 
     var pagamento = [
       {},
-      { id: 1, descricao: 'Cartão de crédito ou débito' },
+      { id: 1, descricao: 'Cartão de Crédito ou Débito' },
       { id: 2, descricao: 'Pix' },
       { id: 3, descricao: 'PicPay' },
       { id: 4, descricao: 'Dinheiro' },
@@ -41,7 +41,7 @@ function iniciarSistema() {
       {
         id: 1,
         sabor: 'calabresa',
-        descricao: 'Mussarela, Calabresa e cebola',
+        descricao: 'Mussarela, Calabresa e Cebola',
       },
       {
         id: 2,
@@ -66,7 +66,7 @@ function iniciarSistema() {
       {
         id: 6,
         sabor: 'Carne Seca',
-        descricao: 'Mussarela, Carne seca e cream cheese',
+        descricao: 'Mussarela, Carne seca e Cream cheese',
       },
       {
         id: 7,
@@ -109,20 +109,20 @@ function iniciarSistema() {
 
       if (pedirEntrega == 1) {
         cliente.nome = prompt('Digite seu nome: ');
-        cliente.celular = prompt(`${cliente.nome}, digite seu celular: `);
+        cliente.celular = prompt(`${cliente.nome}, Digite seu celular: `);
       } else {
         cliente.nome = prompt('Digite seu nome: ');
-        cliente.celular = prompt(`${cliente.nome}, digite seu celular: `);
+        cliente.celular = prompt(`${cliente.nome}, Digite seu celular: `);
 
-        cliente.rua = prompt(`${cliente.nome},digite sua rua: `);
+        cliente.rua = prompt(`${cliente.nome},Digite sua rua: `);
         cliente.numero = prompt(
-          `${cliente.nome}, digite o número do endereço: `
+          `${cliente.nome}, Digite o número do endereço: `
         );
         cliente.complemento = prompt(
-          `${cliente.nome}, digite o complemento do seu endereço: `
+          `${cliente.nome}, Digite o complemento do seu endereço: `
         );
-        cliente.bairro = prompt(`${cliente.nome}, digite seu bairro: `);
-        cliente.referencia = prompt(`${cliente.nome}, digite uma referência: `);
+        cliente.bairro = prompt(`${cliente.nome}, Digite seu bairro: `);
+        cliente.referencia = prompt(`${cliente.nome}, Digite uma referência: `);
       }
 
       var pedirPizza = parseInt(
