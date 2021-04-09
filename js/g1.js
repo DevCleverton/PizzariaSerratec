@@ -155,10 +155,10 @@ while (resposta == false) {
     }
 
 
-    var precisaDeTroco = prompt("Precisa de Troco\n 1 - Sim\n 2 - Não")
 
 
     if (formaDePagamento == "4") {
+        var precisaDeTroco = prompt("Precisa de Troco\n 1 - Sim\n 2 - Não")
         if (precisaDeTroco == "1") {
             var troco = parseFloat(prompt("Precisa de troco para quanto:"))
             total = troco - somatorio
