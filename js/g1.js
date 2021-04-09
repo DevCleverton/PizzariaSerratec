@@ -170,9 +170,8 @@ function iniciarSistema() {
     }
     alert(`Agradecemos sua preferência senhor(a) ${cliente.nome}`)
 
-    document.write(
-        `<center><div style="background-color: orange; width: 60%";><h1 style="color: black";> Olá, ${cliente.nome} <br> Numero do seu Pedido é: ${numeroPedido} <br> Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Seu Pedido foi CONFIRMADO <br> Tempo Estimado de até 90 min.</h1></div></center>`
-    );
+    document.getElementById('detalhes').innerHTML = `<center><div style="background-color: orange; width: 60%";><h1 style="color: black";> Olá, ${cliente.nome} <br> Numero do seu Pedido é: ${numeroPedido} <br> Tamanho: ${pizzas[pedirPizza].descricao} <br> Borda: ${bordas[pedirBordas].tipo} <br> Bebida:${bebidas[pedirBebidas].modelo} <br> Dados do pagamento: ${pagamento[formaDePagamento].descricao} <br> ${entrega[pedirEntrega].tipo}<br> Valor Total: R$${somatorio},00 <br> Seu Pedido foi CONFIRMADO <br> Tempo Estimado de até 90 min.</h1></div></center>`
+
 }
 setTimeout(() => {
     iniciarSistema(); 
